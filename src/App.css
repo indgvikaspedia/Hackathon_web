@@ -1,0 +1,621 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.background {
+  /* background-image:  "url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')"; */
+  /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* display: grid; */
+    /* place-items: center; */
+}
+.main {
+  /* width: 100%; */
+  /*height: 200px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCol {
+  flex: 0 0 50%;
+  /* background-color: lightgreen; */
+  margin-top: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 1; */
+  /* margin-left: 50px; */
+  /* width: 100px; */
+}
+
+.rightCol {
+  flex: 0 0 20%;
+  /* background-color: lightgray; */
+  margin-top: 5%;
+ margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 1; */
+}
+.bordercss{
+  border-radius: 10px;
+/* background-color: burlywood; */
+  border: 4px solid #3DCAB5;
+  /* height: 50px; */
+}
+.ulll {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.liii {
+  display: inline;
+}
+/* .container {
+  position: relative;
+  text-align: center;
+  color: white;
+} */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bg-img {
+
+  background-image: url("Home_page1.jpg");
+  height: 1350px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* @media screen and (max-width:689px) {
+  .bg-img {
+    
+    background-image: url("Home_page1.jpg");
+    height:689px;
+    width: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ 
+    position: relative;
+  }
+} */
+
+
+/* @media screen and (max-width:600px) {
+  .bg-img {
+    
+    background-image: url("Home_page1.jpg");
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png');
+    height:800px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ 
+    position: relative;
+  }
+} */
+@media screen and (min-width: 410px) and (max-width: 492px){
+  .bg-img {
+    
+    background-image: url("Login_Screen_BG.png");
+    /* background-image: url("Home_page1.jpg"); */
+    /* background: url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png');  */
+    height:800px;
+    width: 410px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+  }
+}
+
+/* @media (min-width: 493px) and (max-width: 732px){
+  .bg-img {
+    
+    background-image: url("Home_page1.jpg");
+    height:800px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+    
+  }
+} */
+
+/* @media screen and (max-width: 736px){
+  .videopart{
+    width: 10px;
+    height: 10px;
+    background-color: #f67d22;
+}
+} */
+/* @media screen and (max-width:1024px) {
+  .bg-img {
+    
+    background-image: url("Home_page1.jpg");
+    height:800px;
+    width: 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  
+  }
+} */
+/* .bg-img {
+    
+  background-image: url("Home_page1.jpg");
+  height:800px;
+  width: 1024px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+
+} */
+/* @media  screen and (max-width : 600px) {
+  .bg-img{
+
+  }
+} */
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  margin-left: 70pc;
+  width: auto;
+  /* background-color: #3DCAB5; */
+  height: 40px;
+}
+
+@media screen and (max-width:1390px){
+  .topnav {
+    overflow: hidden;  
+  }
+}
+@media screen and (max-width:1275px){
+  .topnav {
+    overflow: hidden;
+  
+  }
+}
+@media screen and (max-width:1207px){
+  .topnav {
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 492px){
+  .topnav {
+    overflow: hidden;
+  }
+  
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.img-float{
+  float: left;
+  padding-left: 20px;
+}
+.float-text{
+  padding-top: 30px;
+  /* padding-left: 30px; */
+  float:right;
+}
+.topnav a:hover {
+  background-color:#282c34;
+  /* color: black; */
+}
+
+.bg-img-about {
+  /* The image used */
+  background-image: url("BG_Shape.png");
+  height: 1350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media screen and (max-width:600px) {
+  .bg-img-about {
+    /* The image used */
+    background-image: url("BG_Shape.png");
+    /* height: 1350px; */
+    height:1000px;
+    width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+.container-about {
+  position: absolute;
+  margin: 20px;
+  /* margin-left: 70pc; */
+  width: auto;
+}
+@media screen and (max-width:1390px){
+  .container-about {
+    position: absolute;
+    margin: 20px;
+    /* margin-left: 70pc; */
+    width: auto;
+  }
+}
+@media screen and (max-width:1275px){
+  .container-about {
+    position: absolute;
+    margin: 20px;
+    /* margin-left: 70pc; */
+    width: auto;
+  }
+}
+@media screen and (max-width:1207px){
+  .container-about {
+    position: absolute;
+    margin: 20px;
+    /* margin-left: 70pc; */
+    width: auto;
+  }
+}
+.bg-img-awards {
+  /* The image used */
+  background-image: url("AwardBG.jpg");
+  height: 1350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width:600px) {
+
+  .bg-img-awards {
+    /* The image used */
+    background-image: url("AwardBG.jpg");
+    height:1000px;
+    width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+}
+.bg-img-prob {
+  /* The image used */
+  background-image: url("probState.png");
+  height: 1350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media screen and (max-width:600px) {
+
+  .bg-img-prob {
+    /* The image used */
+    background-image: url("probState.png");
+    height:1000px;
+    width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+.container-awards {
+  position: absolute;
+  margin: 20px;
+  /* margin-left: 70pc; */
+  width: auto;
+}
+
+.header {
+  float: right;
+  width: 100%;
+  height: 100px;
+  background-color: #1c2230;
+  position: sticky;
+  top:0;
+  z-index: 2;
+  
+}
+
+
+.grad{
+  height: 200px;
+  background-image: linear-gradient(#3DCAB5,#1c2230);
+   width: 50px;
+   /* height: 80px; */
+   
+   -ms-transform: skewY(7deg); /* IE 9 */
+   transform: skewY(7deg);
+}
+
+.tranformCard{
+  /* float: left; */
+  width: 50px;
+  height: 80px;
+  /* background-color: yellow; */
+  -ms-transform: skewY(7deg); /* IE 9 */
+  transform: skewY(7deg);
+  
+}
+.transProbState1{
+  /* float: left; */
+  width: 50px;
+  height: 80px;
+  /* background-color: yellow; */
+  -ms-transform: skewY(7deg); /* IE 9 */
+  transform: skewY(7deg);
+  
+}
+.transProbState2{
+  /* float: left; */
+  width: 50px;
+  height: 80px;
+  /* background-color: yellow; */
+  -ms-transform: skewY(-7deg); /* IE 9 */
+  transform: skewY(-7deg);
+  
+}
+.gradProb{
+  height: 200px;
+  /* background-color: red;  */
+  border-radius: 5;
+  border-color: red;
+  background-image: linear-gradient(#3DCAB5,#1c2230);
+  /* margin-left: 30px; */
+}
+.img-float-prob{
+  /* float: left;
+  padding-left: 80px; */
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.img-float-prob2{
+  float: left;
+  /* padding-top: 50px; */
+  /* padding-left: 50px; */
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+}
+
+.bg-img-faq {
+  /* The image used */
+  background-image: url("FAQ_Main_BG.jpg");
+  height: 950px;
+  /* background-color: beige; */
+  /* height:auto; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* padding-bottom: 100px; */
+}
+
+/* @media screen and (max-width:600px) {
+
+  .bg-img-faq {
+   
+    background-image: url("FAQ_Main_BG.jpg");
+    height:1000px;
+    width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+} */
+
+.faqDiv{
+  background-color: #1c2230;
+  width: 600px;
+  border: 3px solid white;
+  padding-bottom: 20px;
+  float: left;
+  
+}
+
+@media screen and (max-width:1390px){
+  .cardView {
+    overflow: hidden;  
+  }
+}
+@media screen and (max-width:1275px){
+  .cardView {
+    overflow: hidden;
+  
+  }
+}
+@media screen and (max-width:1207px){
+  .cardView {
+    overflow: hidden;
+  }
+}
+.faqContent{
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  padding-left: 180px;
+}
+.verticalLine{
+  border-left: 6px solid green;
+  height: 100px;
+  /* left: 50%; */
+  margin-left: -3px;
+  top: 0;
+}
+
+.bg-img-scope {
+  /* The image used */
+  background-image: url("Scope&Stages.jpg");
+  width: 100%;
+  height: 2000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width:600px) {
+
+  .bg-img-scope {
+    /* The image used */
+    background-image: url("Scope&Stages.jpg");
+    height:2000px;
+    width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+@media screen and (max-width:1390px){
+  .stages {
+    overflow: hidden;  
+  }
+}
+@media screen and (max-width:1275px){
+  .stages {
+    overflow: hidden;
+  
+  }
+}
+@media screen and (max-width:1207px){
+  .stages {
+    overflow: hidden;
+  
+  }
+}
+.img-scope{
+  /* float: left; */
+  padding-top: 5%;
+  padding-left: 10px;
+  position: absolute;
+}
+.scopeDiv{
+  padding-left: 30px;
+  /* padding: 10px; */
+  /* margin: 20px; */
+}
+.img-arrow{
+  float: left;
+  padding-left: 600px;
+}
+.img-icon{
+  float: left;
+  padding-left: 60px;
+}
+.img-icon2{
+  float: left;
+  padding-left: 20px;
+}
+.img-icon3{
+  float: left;
+  padding-left: 20px;
+}
+.grad-scope{
+  height: 200px;
+  background-image: linear-gradient(orange,#1c2230);
+   width: 50px;
+  
+}
+.rotateImg{
+  width: 150px;
+  height: 80px;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}
+.rotateLineImg{
+  width: 150px;
+  height: 80px;
+  
+  -ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}
+.imgText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-img-scope-reg {
+  /* The image used */
+  background-image: url("Smart_Object.png");
+  /* padding-top: 20px; */
+  /* width: 10px; */
+  /* height: 20px; */
+  /* height: "5%";
+  width: "5%";
+  padding-top: '20%'; */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
+  position: relative;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

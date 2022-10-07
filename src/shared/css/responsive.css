@@ -1,0 +1,468 @@
+/* .lastmodified-link {
+  margin-left: 45px;
+} */
+
+/* .side_nav {
+  padding-left: 35px;
+} */
+.footer-align-center {
+    text-align: center;
+  }
+  .satya {
+    width: 230px;
+    height: 92px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 269px -2484px;
+    /* margin-left: -36px; */
+    /* position: absolute; */
+    background-size: 503% 466%;
+  }
+  
+  .logo {
+    width: 125px;
+    height: 91px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 642px -2998px;
+  }
+  
+  .digitalLogo {
+    width: 110px;
+    height: 42px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png)  381px -3012px;
+    margin-left: 21px;
+  }
+  .indiaGovLogo {
+    width: 127px;
+    height: 30px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 401px -2544px;
+  }
+  
+  .cdacLogo {
+    width: 127px;
+    height: 79px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 1749px -2491px;
+    margin-top: 4px;
+  }
+  
+  .links {
+    background-color: #ededed;
+    margin-top: 10px;
+  }
+  
+  .history {
+    background-color: #e2e2e2;
+    position: relative;
+    top: 0px;
+    padding: 36px;
+  }
+  .aboutAlign {
+    display: none;
+  }
+  .about {
+    background-color: #4d4d4d;
+    position: relative;
+    top: 0px;
+  }
+  
+  .containerModify.container {
+    max-width: 1435px;
+    padding: 20px;
+  }
+  .columnheading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-color: #166532;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .columncontent {
+    text-align: left;
+    color: #333333;
+    list-style-type: none;
+    font-size: 14px;
+  }
+  li.seeMore {
+    font-weight: bold;
+  }
+  a.linkColor {
+    color: black;
+  }
+  
+  .footer-twitter {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -346px;
+  }
+  .footer-facebook {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -367px;
+  }
+  .footer-youtube {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -387px;
+  }
+  
+  .footer-googleplus {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -408px;
+  }
+  .footer-rss {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -429px;
+  }
+  .footer-feedback {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -449px;
+  }
+  .footer-discussion {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -470px;
+  }
+  .footer-poll {
+    width: 50px;
+    height: 19px;
+    background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 45px -491px;
+  }
+  .historyLink {
+    color: #f67d22;
+  }
+  .historyLink:hover {
+    color: #f67d22;
+  }
+  .historyContent {
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 1px;
+  }
+  
+  .aboutContainer.container {
+    max-width: 1258px;
+  }
+  
+  .aboutContent {
+    font-size: 10pt;
+  }
+  .aboutLink {
+    color: #f8f9fa;
+  }
+  a.aboutLink:hover {
+    color: #f67d22;
+  }
+  
+  .container.historyContainer {
+    max-width: 1140px;
+  }
+  .separater {
+    background-color: #006633;
+    height: 3px;
+    position: relative;
+    top: 15px;
+  }
+  .row-align-center {
+    place-content: center;
+  }
+  .footer-margin {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  .aboutContent .nav-link {
+    padding: 0.5rem 0.6rem;
+  }
+  .LM-margin {
+    justify-content: center;
+  }
+  .about-linksalign {
+    justify-content: center;
+  }
+  .row-align-center .list-group-item:first-child {
+    border-top-left-radius: 6.25rem;
+  }
+  .row-align-center .list-group-item {
+    height: 0px;
+  }
+  
+  /*---------Responsive functionality for laptop----------*/
+  @media screen and (max-width: 1366px) {
+  }
+  @media screen and (max-width: 1328px) {
+    .aboutContent {
+      margin-left: 0px;
+      font-size: 10pt;
+    }
+  }
+  @media screen and (max-width: 1292px) {
+    .satya {
+      margin-left: -36px;
+    }
+  }
+  @media screen and (max-width: 1216px) {
+    .aboutContent {
+      font-size: 9pt;
+    }
+  }
+  @media screen and (max-width: 1133px) {
+    .aboutContent {
+      font-size: 8pt;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .aboutContent .nav-link {
+      padding: 0.3rem 0.4rem;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .aboutContent .nav-link {
+      padding: 0.2rem 0.3rem;
+    }
+  }
+  @media screen and (max-width: 930px) {
+    .indiaGovLogo {
+      width: 87px;
+      height: 30px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 284px -2539px;
+      background-size: 866px;
+    }
+    .digitalLogo {
+      width: 79px;
+      height: 31px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 1136px -2864px;
+      background-size: 862px;
+    }
+    .cdacLogo {
+      width: 81px;
+      height: 56px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 361px -2789px;
+      background-size: 840px;
+    }
+    .satya {
+      width: 156px;
+      height: 67px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 173px -2480px;
+      margin-left: 29px;
+      background-size: 751px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /*---------Responsive functionality for laptop----------*/
+  
+  /*---------Responsive functionality for landscape----------*/
+  @media screen and (max-width: 812px) {
+    .aboutContent {
+      font-size: 7pt;
+      margin-top: 8px;
+    }
+    .satya {
+      margin-left: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 736px) {
+    .videopart{
+        width: 10px;
+        height: 2px;
+        display: contents;
+        /* justify-content: center; */
+        background-color: #f67d22;
+    }
+
+    /* .bgHome{
+        background-image: url("Home_page1.jpg");
+        height:800px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+     
+        position: relative;
+    } */
+    .containerModify.container {
+      max-width: 618px;
+      padding: 20px;
+    }
+    .div.test {
+      position: relative;
+      top: 39px;
+    }
+    .cdacLogo {
+      width: 77px;
+      height: 50px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 285px -1903px;
+      background-size: 820% 652%;
+    }
+    .satya {
+      width: 115px;
+      height: 53px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 135px -2476px;
+      margin-left: 0px;
+      background-size: 519%;
+    }
+    .digitalLogo {
+      width: 72px;
+      height: 25px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 267px -3524px;
+      background-size: 1174%;
+    }
+    .indiaGovLogo {
+      width: 73px;
+      height: 27px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 249px -3170px;
+      background-size: 1033%;
+    }
+    .cdacLogo {
+      width: 77px;
+      height: 50px;
+      background: url(https://static.vikaspedia.in/media/react/images/sprite08.png) 285px -1903px;
+      background-size: 820% 652%;
+    }
+    .columnheading {
+      font-size: 10px;
+    }
+    .columncontent {
+      font-size: 10px;
+    }
+    .columnheading.egovAlign {
+      position: relative;
+      left: -22px;
+    }
+  
+    .columnheading.footerlinksheader {
+      padding: 10px;
+      padding-bottom: 2px;
+      padding-left: 0px;
+    }
+    .columncontent.footerlinks {
+      padding: -4px;
+      padding: 0px;
+      padding-bottom: 22px;
+    }
+    .historyContent {
+      font-size: 14px;
+    }
+    .socialMedia {
+      position: relative;
+      left: 21px;
+    }
+  
+    .footer-align-center {
+      margin-top: 47px;
+    }
+    .aboutContent {
+      margin-top: 15px;
+      font-size: 6pt;
+    }
+  }
+  /*---------Responsive functionality for landscape----------*/
+  
+  /*---------Responsive functionality for mobile----------*/
+  @media (min-width: 493px) and (max-width: 732px) {
+    .hideInput.col-md-2 {
+      display: none;
+    }
+  
+    .row-align-center {
+      place-content: flex-start;
+    }
+    
+  }
+  
+  @media screen and (min-width: 414px) and (max-width: 492px) {
+      .videopart{
+          width: 10px;
+          height: 10px;
+          background-color: #f67d22;
+      }
+    .digitalLogo {
+      margin-left: 0px;
+    }
+    .history {
+      padding-top: 4px;
+      padding-bottom: 15px;
+    }
+    .historyContent {
+      font-size: 12px;
+    }
+    .col-md-6.hideAbout {
+      display: none;
+    }
+  
+    .aboutSingLine {
+      width: 70px;
+      white-space: nowrap;
+    }
+    .aboutAlign {
+      display: block;
+      position: relative;
+      top: -95px;
+      left: -91px;
+    }
+  
+    .aboutLogoAlign {
+      position: relative;
+      top: -45px;
+    }
+    /* .aboutLink {
+      font-size: 12px;
+    } */
+    .about {
+      /* padding: 103px; */
+      padding-bottom: 38px;
+    }
+  
+    .containerModify.container {
+      padding: 15px;
+    }
+    .socialMedia {
+      left: 125px;
+      top: -29px;
+    }
+    .row-align-center {
+      place-content: flex-start;
+    }
+  
+    
+    .aboutContent {
+      margin-top: 0px;
+      font-size: 5pt;
+    }
+    .cdacLogo {
+      margin-bottom: 60px;
+      margin-left: 159px;
+    }
+    .satya {
+      margin-left: 129px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .satya {
+      margin-left: 109px;
+    }
+    .aboutContent .nav-link {
+      padding: 0.1rem 0.1rem;
+    }
+    .aboutContent .nav-link {
+      padding: 0.1rem 0.1rem;
+    }
+    .cdacLogo {
+      margin-bottom: 20px;
+      margin-left: 260px;
+      margin-top: -42px;
+    }
+    .digitalLogo {
+      margin-left: 6px;
+    }
+  }
+
+  @media screen and (max-width: 576px) { 
+    .satya, .cdacLogo {
+      margin: auto !important;
+    }
+  }
+  /* ---------Responsive functionality for mobile---------- */

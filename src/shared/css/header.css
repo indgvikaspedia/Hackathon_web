@@ -1,0 +1,9 @@
+.header_container {
+    max-width: 1635px !important;
+    display: block !important;
+   }
+
+   .ListText1{
+    font-size: 20px;
+    color: #333 !important;
+  }
