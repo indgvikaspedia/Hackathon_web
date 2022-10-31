@@ -37,9 +37,9 @@ function AwardsScreen(props) {
 
     return (
        
-        <div class="bg-img-awards">
-            <div class={offsetAward >= 6000 ? "header" : "container"}>
-                {/* <div class="container"> */}
+        <div class="bg-img-awards" style={{paddingBottom: 60}}>
+            {/* <div class={offsetAward >= 6000 ? "header" : "container"}>
+                
                 {
                     offsetAward >= 6000
                         ?
@@ -52,8 +52,7 @@ function AwardsScreen(props) {
                                 <a href="#challenges" style={{ fontWeight: 'bold', fontSize: 20 }}>Challenges</a>
                                 <a href="#awards" style={{ fontWeight: 'bold', fontSize: 20 }}>Awards</a>
                                 <a href="#faq" style={{ fontWeight: 'bold', fontSize: 20 }}>FAQ</a></div>
-                            {/* <a href="#login" style={{ marginLeft: 80, fontSize: 20 }}>Login</a>
-                                 <a href="#signup" class="bordercss" style={{ fontSize: 20 }}>Sign Up</a> */}
+                            
                         </div>
                         :
                         null
@@ -61,46 +60,33 @@ function AwardsScreen(props) {
                 }
 
             
-            </div>
-            <div style={{ paddingTop: 80 }}>
+            </div> */}
+            <div style={{ paddingTop: 20,paddingBottom: 40 }}>
                 <p style={{ color: 'white', textAlign: 'center', fontSize: 80, }}>Awards</p>
             </div>
               
-              
-            <Container style={{marginLeft:"30%"}}>
-            {/* <div  > */}
-                <table style={{borderSpacing:50,}}>
-                    <thread>
-                        <tr style={{}}>
-                            <th class='grad' >
-                                <Card style={{ width: '18rem', height: 500, }}>
-                                  
-                                    <CardBody>
-                                        <CardTitle style={{ color: 'white' ,paddingTop:20, fontSize:31}}>Awards for Shortlisted</CardTitle>
-                                        {/* <CardSubtitle style={{ color: 'white' }}>Card subtitle</CardSubtitle> */}
-                                        {/* <CardText style={{ color: 'white' }}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText> */}
-
-                                    </CardBody>
-                                </Card>
-                            </th>
-                            <th class='grad' style={{marginLeft:30}} >
-                                <Card style={{ width: '18rem', height: 500, }}>
-                                   
-                                    <CardBody>
-                                        <CardTitle style={{ color: 'white',paddingTop:20 ,fontSize:31,}}>Awards for Winner's</CardTitle>
-                                        {/* <CardSubtitle style={{ color: 'white' }}>Card subtitle</CardSubtitle> */}
-                                        {/* <CardText style={{ color: 'white' }}>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText> */}
-
-                                    </CardBody>
-                                </Card>
-                            </th>
-                        </tr>
-                    </thread>
-                </table>
-                {/* </div> */}
+            <Container className='awardPart'>
+                <div className='card-group' style={{width: '70%',margin: 'auto'}}>
+                    <Card className='leftSlide'>
+                        <img src={firstplace} class="card-img-top" alt='mobile_logo' />
+                        <div class="card-body" style={{height: 350}}>
+                            
+                        </div>
+                    </Card>
+                    <Card className='leftSlide'>
+                        <img src={firstplace} class="card-img-top" alt='mobile_logo' />
+                        <div class="card-body" style={{height: 350}}>
+                            
+                        </div>
+                    </Card>
+                    <Card className='leftSlide'>
+                        <img src={firstplace} class="card-img-top" alt='mobile_logo' />
+                        <div class="card-body" style={{height: 350}}>
+                            
+                        </div>
+                    </Card>
+                </div>
             </Container>
-           
-           
         </div>
     );
 }

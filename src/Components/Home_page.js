@@ -9,7 +9,9 @@ import ScopeAndStages from "../pages/ScopeAndStages";
 const Home_page=()=>{
     return(
         <div>
+
             <HeaderScreen/>
+            <div class="bg-img"></div>
             <AboutUs/>
             <ScopeAndStages/>
             <ProbStatement/>

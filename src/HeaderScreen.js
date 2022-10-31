@@ -58,45 +58,36 @@ function HeaderScreen() {
   console.log("off ****** ######### --------------", offset);
   return (
 
-    <div ref={ref}>
+    <div ref={ref} class={offset >= 110 ? "fixed-header topHeader" : "fixed-header normalHeader"}>
       {/* Hi! My width is {width}px and height is {height}px */}
-      <div class="bg-img">
-        <div class={offset >= 360 ? "header" : "container"}>
-
+        <div class={offset >= 110 ? "container" : "container normalNavBar"}>
           {
-            offset >= 360
+            offset >= 110
               ?
-              <div class="topnav" >
+              <div class="topnav">
                 <img class='img-float' src={AKAM} alt='akam_logo' style={{ width: 100, height: 100 }} />
                 <div class='float-text'>
-                  <a href="#about" style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>About</a>
-                  <a href="#rules" style={{ fontWeight: 'bold', fontSize: 20 }}>Rules</a>
-                  <a href="#stages" style={{ fontWeight: 'bold', fontSize: 20 }}>Stages</a>
-                  <a href="#challenges" style={{ fontWeight: 'bold', fontSize: 20 }}>Challenges</a>
-                  <a href="#awards" style={{ fontWeight: 'bold', fontSize: 20 }}>Awards</a>
-                  <a href="#faq" style={{ fontWeight: 'bold', fontSize: 20 }}>FAQ</a></div>
+                  <a href="#about">About</a>
+                  <a href="#rules">Rules</a>
+                  <a href="#stages">Stages</a>
+                  <a href="#challenges">Challenges</a>
+                  <a href="#awards">Awards</a>
+                  <a href="#faq">FAQ</a></div>
 
               </div>
               :
-              <div class="topnav" >
-                <a href="#about" style={{ fontWeight: 'bold', fontSize: 20, }}>About</a>
-                <a href="#rules" style={{ fontWeight: 'bold', fontSize: 20 }}>Rules</a>
-                <a href="#stages" style={{ fontWeight: 'bold', fontSize: 20 }}>Stages</a>
-                <a href="#challenges" style={{ fontWeight: 'bold', fontSize: 20 }}>Challenges</a>
-                <a href="#awards" style={{ fontWeight: 'bold', fontSize: 20 }}>Awards</a>
-                <a href="#faq" style={{ fontWeight: 'bold', fontSize: 20 }}>FAQ</a>
-                <a href="Login" style={{ marginLeft: 80, fontSize: 20 }}>Login</a>
-                <a href="Register" class="bordercss" style={{ fontSize: 20 }}>Sign Up</a>
+              <div class="topnav">
+                <a href="#about">About</a>
+                <a href="#rules">Rules</a>
+                <a href="#stages">Stages</a>
+                <a href="#challenges">Challenges</a>
+                <a href="#awards">Awards</a>
+                <a href="#faq">FAQ</a>
+                <a href="Login" style={{ marginLeft: 40 }}>Login</a>
+                <a href="Register" class="bordercss">Sign Up</a>
               </div>
           }
-
         </div>
-
-      </div>
-
-
-
-
     </div>
   );
 }

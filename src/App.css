@@ -81,7 +81,7 @@
 .bg-img {
 
   background-image: url("Home_page1.jpg");
-  height: 1350px;
+  height: 875px;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -191,13 +191,10 @@
 } */
 
 /* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  margin-left: 70pc;
-  width: auto;
-  /* background-color: #3DCAB5; */
-  height: 40px;
+@media screen and (min-width:1300px){
+  .container {
+    max-width: 1270px;
+  }
 }
 
 @media screen and (max-width:1390px){
@@ -235,17 +232,49 @@
 }
 
 /* Navbar links */
+.fixed-header {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+}
+.videopart video {
+  width: 100%;
+} 
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 600;
 }
-.img-float{
+.normalNavBar{
+  justify-content: end;
+  display: flex;
+  padding-top: 47px;
+}
+.stickyNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topHeader {
+  background-color: #212c3e;
+}
+.faqContainer .img-float{
   float: left;
-  padding-left: 20px;
+  padding: 20px;
+  width: 80px !important;
+  height: 80px !important;
+  margin-right: 20px;
+  border-right: 3px solid #fff;
+}
+img-float{
+  float: left;
+  width: 80px !important;
+  height: 80px !important;
+  margin-right: 20px;
 }
 .float-text{
   padding-top: 30px;
@@ -260,11 +289,13 @@
 .bg-img-about {
   /* The image used */
   background-image: url("BG_Shape.png");
-  height: 1350px;
-  background-position: center;
+  background-position: -100px -300px;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: 65%;
+}
+.about-part {
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width:600px) {
   .bg-img-about {
@@ -312,12 +343,13 @@
 }
 .bg-img-awards {
   /* The image used */
-  background-image: url("AwardBG.jpg");
-  height: 1350px;
+  background-image: url("MainBG.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   position: relative;
+  border-top: 10px solid yellow;
+  border-bottom: 10px solid yellow;
 }
 
 @media screen and (max-width:600px) {
@@ -334,10 +366,18 @@
   }
 
 }
+.awardPart .card{
+  background-image: linear-gradient(#364a78, #2a2c26);
+  border: transparent;
+}
+.awardPart .card img{
+  width: 110px;
+  margin: auto;
+}
 .bg-img-prob {
   /* The image used */
   background-image: url("probState.png");
-  height: 1350px;
+  height: 850px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,14 +477,17 @@
 
 .bg-img-faq {
   /* The image used */
-  background-image: url("FAQ_Main_BG.jpg");
-  height: 950px;
+  /* background-image: url("FAQ_Main_BG.jpg"); */
+  /* height: 950px; */
   /* background-color: beige; */
   /* height:auto; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 30px;
+  background: rgb(27,33,47);
+  background: linear-gradient(180deg, rgba(27,33,47,1) 0%, rgba(42,56,80,1) 50%, rgba(27,33,47,1) 100%);
   /* padding-bottom: 100px; */
 }
 
@@ -465,11 +508,14 @@
 
 .faqDiv{
   background-color: #1c2230;
-  width: 600px;
+  width: 100%;
   border: 3px solid white;
-  padding-bottom: 20px;
-  float: left;
-  
+  display: inline-block;
+}
+
+.faqContainer .card-body {
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width:1390px){
@@ -501,18 +547,149 @@
   margin-left: -3px;
   top: 0;
 }
-
+.rightSlide {
+  transform: perspective(900px) rotateX(0deg) rotateY(330deg) rotateZ(0deg);
+} 
+.leftSlide {
+  transform: perspective(900px) rotateX(0deg) rotateY(30deg) rotateZ(0deg);
+}
+.challenge_tag span{
+  background-color: #333;
+  color: #fff;
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.challenge_arrow {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 94%;
+}
+.challenge_arrow span {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background-size: contain;
+}
+.challenge_arrow span.leftArrow {
+  float: left;
+  background-image: url("arrow.png");
+  transform: rotate(180deg);
+}
+.challenge_arrow span.rightArrow {
+  float: right;
+  background-image: url("arrow.png");
+  transform: rotate(0deg);
+}
+.challenge_part .card button {
+  background-color: #61b33b;
+  font-size: 26px;
+  padding: 5px 20px;
+  text-align: center;
+  border-color: #61b33b;
+}
 .bg-img-scope {
   /* The image used */
-  background-image: url("Scope&Stages.jpg");
+  background-image: url("Scope.jpg");
   width: 100%;
-  height: 2000px;
-  background-position: center;
+  height: 2480px;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
 }
-
+.registerBtn::before {
+  content: '';
+  background-image: url(Register_Here_Caption_shape.png);
+  background-size: 100%;
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+.registerBtn::after {
+  content: '';
+  background-image: url(Register_Here_Caption_shape.png);
+  background-size: 100%;
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+}
+.registerBtn {
+  color: #3DCAB5;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 12px 48px;
+  position: relative;
+}
+.bg-reg{
+  background-image: url("");
+}
+.scope-img {
+  width: 440px;
+}
+.scope2 {
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+.scope3 {
+  padding: 0 150px 75px 200px;
+}
+.scope-moa{
+  width: 180px;
+}
+.AppathonBtn {
+  font-size: 40px;
+  color: #3DCAB5;
+  background-image: linear-gradient(#f29114, #2a2c26);
+  padding: 40px 80px;
+  position: relative;
+}
+.stage-content p {
+  margin: 0;
+  color: #3DCAB5;
+  font-size: 20px;
+  font-weight: 600;
+}
+.stage-content span{
+  display: block;
+}
+.registerBtn{
+  color: #3DCAB5;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 12px 48px;
+}
+.AppathonBtn::before {
+  content: "";
+  width: 46px;
+  height: 110%;
+  top: -14px;
+  left: -22px;
+  position: absolute;
+  transform: rotate(20deg);
+  background-color: #282828;
+}
+.AppathonBtn::after{
+  content: "";
+  width: 46px;
+  height: 110%;
+  top: -14px;
+  right: -22px;
+  position: absolute;
+  transform: rotate(-20deg);
+  background-color: #282828;
+}
 @media screen and (max-width:600px) {
 
   .bg-img-scope {

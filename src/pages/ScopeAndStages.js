@@ -17,6 +17,7 @@ import Stages_Lines_mirror from '../Stages_Lines_mirror.png'
 import Prototype_Submission from '../Prototype_Submission.png'
 import Final_App_Submission from '../Final_App_Submission.png'
 import Smart_Object from "../Smart_Object.png"
+import Bottom_Shape from "../Bottom_Shape.png"
 // import './App.css';
 // import images from './images/MainBG.png'
 import firstplace from '../firstplace.png'
@@ -49,90 +50,139 @@ const ScopeAndStages = (props) => {
     return (
 
         <div class="bg-img-scope" >
-            <div class={offsetAward >= 2650 ? "header" : "container"}>
-                {/* <div class="container"> */}
-                {
-                    offsetAward >= 2650
-                        ?
-                        <div class="topnav" >
-                            <img class='img-float' src={AKAM} alt='akam_logo' style={{ width: 100, height: 100 }} />
-                            <div class='float-text'>
-                                <a href="#about" style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>About</a>
-                                <a href="#rules" style={{ fontWeight: 'bold', fontSize: 20 }}>Rules</a>
-                                <a href="#stages" style={{ fontWeight: 'bold', fontSize: 20 }}>Stages</a>
-                                <a href="#challenges" style={{ fontWeight: 'bold', fontSize: 20 }}>Challenges</a>
-                                <a href="#awards" style={{ fontWeight: 'bold', fontSize: 20 }}>Awards</a>
-                                <a href="#faq" style={{ fontWeight: 'bold', fontSize: 20 }}>FAQ</a></div>
-                            {/* <a href="#login" style={{ marginLeft: 80, fontSize: 20 }}>Login</a>
-                                 <a href="#signup" class="bordercss" style={{ fontSize: 20 }}>Sign Up</a> */}
+
+            <div>
+
+                <div>
+                    <div style={{width:'75%',margin:'auto',paddingTop: 60}}>
+                        <p style={{ color: '#3DCAB5', textAlign: 'center', fontSize: 44, fontWeight: 'normal' }}>SCOPE AND TARGET AUDIENCE</p>
+                        <p style={{ color: 'white', textAlign: 'center', fontSize: 18, textAlign: 'center' }}>Developes Mobile app that address problem statements identified by Ministry of IT, Communication and Innovation, Government of Mauritius.</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center" style={{marginTop: 120}}>
+                        <div class="scope1">
+                            <img class='scope-img' src={Mobile} alt='mobile_logo' />
                         </div>
-                        :
-                        null
+                        <div class="scope2">
+                            <p style={{ color: '#3DCAB5', fontSize: 40, fontWeight: 'normal',margin: 0 ,lineHeight: .7}}>Mode of</p>
+                            <small style={{ color: '#3DCAB5', fontSize: 26, fontWeight: 'normal' }}>Registration</small>
+                        </div>
+                        <div class="scope3">
+                        <img class='scope-moa' src={Mode_of_Application} alt='mobile_logo' />
+                        </div>
+                    </div>
+                    <p style={{ color: '#3DCAB5', textAlign: 'center', fontSize: 42, paddingTop: '0%', fontWeight: 'normal' }}>Target audience</p>
 
-                }
-
-
-            </div>
-
-            <div style={{}}>
-
-                <div style={{ position: 'absolute', paddingLeft: '15%' }}>
-                    <p style={{ color: '#3DCAB5', textAlign: 'center', fontSize: 50, fontWeight: 'bold' }}>SCOPE</p>
-                    <p style={{ color: 'white', textAlign: 'center', fontSize: 20, textAlign: 'center' }}>Developes Mobile app that address problem statements identified by Ministry of IT, Communication and Innovation, Government of Mauritius.</p>
-
-                    <p style={{ color: '#3DCAB5', textAlign: 'center', fontSize: 50, paddingTop: '16%', fontWeight: 'bold' }}>TARGET AUDIENCE</p>
-
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div className='targetAudience'>
+                            <img src={Target_Audience} alt='mobile_logo' style={{ height: 120 }} />
+                        </div>
+                        <div>
+                            <p style={{margin: 0,color: '#fff',fontSize: 24}}>Age Group : 20-30 years</p>
+                            <p style={{marginBottom: 0,color: '#fff',marginLeft: 130,fontSize: 24}}>in Teams 4 persons each</p>
+                        </div>
+                    </div>
+                    <div style={{ color: 'white', textAlign: 'center',fontSize: 16}}>(Eligibility criteria : (Education/work status etc.) For participation to be evolved)</div>
                     <div class="" style={{}}>
-                        <table>
-                            <thread>
-                                <tr>
-                                    <th style={{ position: 'absolute', paddingLeft: '24%' }}>
-                                        <div>
-                                            <div style={{ color: 'white', fontSize: 30, textAlign: 'left', }}>MODE OF</div>
-                                            <div style={{ color: 'white', fontSize: 22, textAlign: 'left', }}>Participation</div>
-                                        </div>
-                                    </th>
-                                    <th style={{}}>
-                                        <img class='img-arrow' src={Mobile} alt='mobile_logo' style={{ width: 100, height: 80, }} />
-
-                                    </th>
-                                    <th style={{}}>
-                                        <img class='img-icon' src={Mode_of_Application} alt='mobile_logo' style={{ width: 100, height: 80, }} />
-
-
-                                    </th>
-                                </tr>
-                            </thread>
-                        </table>
-
-                        <table style={{}}>
-                            <thread>
-                                <tr>
-                                    <th style={{ position: 'absolute', paddingLeft: '20%' }}>
-                                        <img class='img-icon' src={Target_Audience} alt='mobile_logo' style={{ width: 100, height: 80, }} />
-                                    </th>
-
-                                </tr>
-                                <th style={{}}>
-
-                                    <div class='img-arrow' style={{ color: 'white', paddingTop: 20 }}>Age Group : </div>
-                                </th>
-                                <th style={{}}>
-
-                                    <div class='img-icon2' style={{ color: 'white', paddingTop: 20 }}>20-30 years in Teams 4 persons each</div>
-                                </th>
-                            </thread>
-                        </table>
-
-                        <div style={{ color: 'white', paddingTop: '30px', textAlign: 'center', paddingLeft: '8%', paddingTop: '5%' }}>(Eligibility criteria : (Education/work status etc.) For participation to be evolved)</div>
 
                         {/* <div style={{ color: 'white', paddingTop: '30px', textAlign: 'center', paddingLeft: '8%', paddingTop: '5%' }}></div> */}
-                        <div style={{ paddingTop: '18%' }}>
+                        <div style={{ paddingTop: '10%' }}>
                             <hr />
                         </div>
 
+                        <div className='text-center' style={{padding: 40}}>
+                            <span className='AppathonBtn'>STAGES OF APPATHON</span>
+                        </div>
 
-                        <div style={{ paddingLeft: '35%', paddingTop: '2%' }}>
+                        <div className='stage1 container' style={{paddingTop: 200,paddingBottom:50}}>
+                            <Row>
+                                <Col md={6}>
+                                    <div className='stage-content' style={{paddingRight:24}}>
+                                        <div style={{ color: 'orange',fontSize: 20,marginBottom: 20,textAlign:'right' }}>31st JULY - 07TH AUGUST</div>
+                                        <div className='d-flex justify-content-end'>
+                                            <div style={{textAlign:'right',paddingRight:12}}>
+                                                <p>Title number 1</p>
+                                                <p>Title 2</p>
+                                            </div>
+                                            <div>
+                                                <img src={Registration_of_Teams} alt='mobile_logo' style={{ height: 70 }} />
+                                            </div>
+                                        </div>
+                                        <div className='text-right' style={{color:'#fff'}}>
+                                            <span>description line 1</span>
+                                            <span>description line 2</span>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='stage2 container' style={{paddingBottom:50}}>
+                            <Row>
+                                <Col md={6} className="offset-md-6">
+                                    <div className='stage-content' style={{paddingLeft:24}}>
+                                        <div style={{ color: 'orange',fontSize: 20,marginBottom: 20,textAlign:'left' }}>31st JULY - 07TH AUGUST</div>
+                                        <div className='d-flex justify-content-start'>
+                                            
+                                            <div>
+                                                <img src={Prototype_Submission} alt='mobile_logo' style={{ height: 70 }} />
+                                            </div>
+                                            <div style={{textAlign:'left',paddingLeft:12}}>
+                                                <p>Title number 1</p>
+                                                <p>Title 2</p>
+                                            </div>
+                                        </div>
+                                        <div className='text-left' style={{color:'#fff'}}>
+                                            <span>description line 1</span>
+                                            <span>description line 2</span>
+                                            <span>description line 3</span>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='stage3 container'>
+                            <Row>
+                                <Col md={6} className="offset-md-3">
+                                    <div className='stage-content'>
+                                        <div style={{ color: 'orange',fontSize: 20,marginBottom: 20,textAlign:'center' }}>31st JULY - 07TH AUGUST</div>
+                                        <div className='d-flex justify-content-center'>
+                                            
+                                            <div>
+                                                <img src={Final_App_Submission} alt='mobile_logo' style={{ height: 70 }} />
+                                            </div>
+                                            <div style={{textAlign:'left',paddingLeft:12}}>
+                                                <p>Title number 1</p>
+                                                <p>Title 2</p>
+                                            </div>
+                                        </div>
+                                        <div className='text-center' style={{color:'#fff'}}>
+                                            <span>description line 1</span>
+                                            <span>description line 2</span>
+                                            <span>description line 3</span>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='text-center'>
+                            <img src={Bottom_Shape} alt='mobile_logo' style={{ height: 200 }} />
+                        </div>
+                        <div className='d-flex justify-content-center' style={{color: 'white'}}>
+                            <div className='timer'>
+                                <h1>00 :</h1>
+                            </div>
+                            <div className='timer'>
+                                <h1>00 :</h1>
+                            </div>
+                            <div className='timer'>
+                                <h1>00 :</h1>
+                            </div>
+                            <div className='timer'>
+                                <h1>00</h1>
+                            </div>
+                        </div>
+
+                        {/* <div style={{ paddingLeft: '35%', paddingTop: '2%' }}>
                             <Card class="grad-scope" style={{ width: '25rem', height: 80, }}>
 
                                 <CardBody>
@@ -140,8 +190,8 @@ const ScopeAndStages = (props) => {
                                 </CardBody>
                                 
                             </Card>
-                        </div>
-                        <div class="stages">
+                        </div> */}
+                        {/* <div class="stages">
                             <div style={{ paddingTop: '3%' }}>
 
                                 <th style={{ paddingLeft: '280px' }}>
@@ -163,8 +213,6 @@ const ScopeAndStages = (props) => {
                                             </tr>
                                         </thread>
                                     </table>
-                                    {/* <div style={{ color: 'white' }}>(eligibility criteria)</div> */}
-
                                 </th>
                                 <th style={{ paddingLeft: '380px' }}>
                                     <div style={{ color: 'orange' }}>15th AUGUST - 17th AUGUST</div>
@@ -283,28 +331,17 @@ const ScopeAndStages = (props) => {
 
                             </table>
 
+                        </div> */}
+
+                        <div className='text-center' style={{marginTop:40}}>
+                            <span className='registerBtn'>
+                                REGISTER HERE
+                            </span>
                         </div>
 
-                        <div style={{ paddingRight: "15%", left: "200px", top: '-30px', position: 'relative', display: 'initial', }}>
-                            <img src={Smart_Object} alt='mobile_logo' style={{ width: 300, height: 80, paddingTop: '15%' }} ></img>
-                            <span style={{ color: "#3DCAB5", paddingRight: "5%", left: "-230px", top: '-30px', position: 'relative', display: 'initial', fontSize: '25px' }}>REGISTER HERE</span>
-                        </div>
                     </div>
-
                 </div>
-                <div style={{paddingRight: "15%", left: "200px", top: '-30px', display: 'initial',position: 'absolute', paddingTop: '18%', }}>
-                    <img class='img-scope' src={Mobile} alt='mobile_logo' style={{ width: "500px", height: "500px" }} />
-                </div>
-
             </div>
-
-
-
-
-
-
-
-
         </div>
     );
 }
